@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCV2hohHo9B1hrvbgvPZ0qbYExOUXi6Wd4",
+    authDomain: "koger-redux.firebaseapp.com",
+    projectId: "koger-redux",
+    storageBucket: "koger-redux.appspot.com",
+    messagingSenderId: "390984485464",
+    appId: "1:390984485464:web:d734d50e7de24f4a87182d"
+  }
 };
 
 /*

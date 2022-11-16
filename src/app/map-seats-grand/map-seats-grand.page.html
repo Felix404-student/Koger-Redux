@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="kogerblue">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <img src="../../assets/img/BlueKoger.jpg" slot="end" height=80>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="ion-padding">
+    <ion-card-title class="ion-text-center">Grand Tier Seating Chart</ion-card-title>
+    <!-- <ion-card-subtitle>Tap to zoom in on map</ion-card-subtitle> -->
+    <!-- <img src="../../assets/img/MapGrand.jpg" (click) = "zoomImage('../../assets/img/MapGrand')" > -->
+    <ion-slides [options]="sliderOpts" zoom>
+      <ion-slide>
+        <div class="swiper-zoom-container">
+          <img src="../../assets/img/MapGrand.jpg" />
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <img src="../../assets/img/WhiteKogerWoodmark.jpg" />
+  </ion-card>
+</ion-content>
