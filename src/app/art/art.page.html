@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>art</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="kogerblue">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <img src="../../assets/img/BlueKoger.jpg" slot="end" height=80>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-card class="ion-padding">
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Art in the Koger Center</ion-card-title>
+      <ion-card-title class="ion-text-center" color="kogerblue"><strong>Phillip Mullen</strong></ion-card-title>
+    </ion-card-header>
+    <img src="../../assets/img/PhillipMullenArt.jpg">
+    <ion-card-content>
+      <p>Philip Mullen came to South Carolina in 1969 and is one of the most renowned artists
+        in the state. His works have been hanging in the Koger Center for the Arts since 1990,
+        filling the space with his pieces that examine light and air. Throughout his art
+        displayed in the Koger Center, Mullen explores the juxtaposition of light and how light
+        touches everything around it. He has been described as creating works with even distribution
+        of thought-out technique and carefree fluidity. From the Whitney Museum to the San Francisco
+        Museum of Art, Mullen’s pieces have showcased his abilities all across America and the Koger
+        Center is proud to house a permanent exhibit.</p>
+      <ion-card-subtitle><strong>Philip Mullen Art at the Koger Center is located on all three levels throughout the building.</strong></ion-card-subtitle>
+    </ion-card-content>
 
+    <ion-row>
+      <ion-col>
+        <ion-button type = "button" expand="block" color="kogerblue" onclick="window.open('https://izi.travel/en/87a1-philip-mullen-art-at-the-koger-center/en', '_system', 'location=yes'); return false;">Audio Tour</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <img src="../../assets/img/WhiteKogerWoodmark.jpg">
+  </ion-card>
 </ion-content>
