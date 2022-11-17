@@ -6,20 +6,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map-grand.page.html',
   styleUrls: ['./map-grand.page.scss'],
 })
-export class MapGrandPage implements OnInit {
+export class MapGrandPage {
 
   sliderOpts = {
     zoom: {
       maxRatio:2
     }
   };
-  
+
   constructor(
     // private photoViewer: PhotoViewer
     ) { }
-
-  ngOnInit() {
-  }
 
   // zoomImage(imageData) {
   //   this.photoViewer.show(imageData);

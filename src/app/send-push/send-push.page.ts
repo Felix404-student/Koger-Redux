@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './send-push.page.html',
   styleUrls: ['./send-push.page.scss'],
 })
-export class SendPushPage implements OnInit {
+export class SendPushPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

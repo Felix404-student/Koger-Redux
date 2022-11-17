@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map-lobby.page.html',
   styleUrls: ['./map-lobby.page.scss'],
 })
-export class MapLobbyPage implements OnInit {
+export class MapLobbyPage {
 
   sliderOpts = {
     zoom: {
@@ -17,11 +17,8 @@ export class MapLobbyPage implements OnInit {
   constructor(
     // private photoViewer: PhotoViewer
     ) { }
-  ngOnInit() {
-  }
-  
+
   // zoomImage(imageData) {
   //   this.photoViewer.show(imageData);
   // }
-
 }

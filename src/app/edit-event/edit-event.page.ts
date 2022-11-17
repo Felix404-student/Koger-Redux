@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './edit-event.page.html',
   styleUrls: ['./edit-event.page.scss'],
 })
-export class EditEventPage implements OnInit {
+export class EditEventPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './admin-dashboard.page.html',
   styleUrls: ['./admin-dashboard.page.scss'],
 })
-export class AdminDashboardPage implements OnInit {
+export class AdminDashboardPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

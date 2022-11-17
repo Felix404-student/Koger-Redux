@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map-seats-grand.page.html',
   styleUrls: ['./map-seats-grand.page.scss'],
 })
-export class MapSeatsGrandPage implements OnInit {
+export class MapSeatsGrandPage {
 
   sliderOpts = {
     zoom: {
@@ -17,9 +17,6 @@ export class MapSeatsGrandPage implements OnInit {
   constructor(
     // private photoViewer: PhotoViewer
     ) { }
-
-  ngOnInit() {
-  }
 
   // zoomImage(imageData) {
   //   this.photoViewer.show(imageData);
