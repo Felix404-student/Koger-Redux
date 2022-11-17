@@ -1,9 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>handicapped</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="kogerblue">
+    <ion-buttons slot="start" color="light">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <img src="../../assets/img/BlueKoger.jpg" slot="end" height=80>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <ion-card class="ion-padding">
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">ADA Accessibility Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-subtitle>Parking</ion-card-subtitle>
+      <p>There are a limited number of ADA spaces in front of the Koger Center at the drop off area.
+         During ticketed events the metered parking spaces on Assembly Street in front of the Koger
+      Center and on College Street are bagged and reserved as accessible parking as well.</p>
+    <ion-card-subtitle> Seating</ion-card-subtitle>
+      <p>There are a limited number of accessible seats at the rear of the Orchestra level on both
+         the left and right sides. Please see an Usher for assistance.</p>
+    <ion-card-subtitle> Elevators</ion-card-subtitle>
+      <p>If you have tickets for seats on the Grand Tier or Balcony levels, there are elevators
+         available at the North end of the Lobby, just past the Assembly Street Entrance from the
+         parking lot. Please see an Usher if you need assistance in reaching or operating the elevator.</p>
+    <img src="../../assets/img/WhiteKogerWoodmark.jpg">
+  </ion-card>
 </ion-content>

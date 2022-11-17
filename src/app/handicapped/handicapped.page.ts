@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './handicapped.page.html',
   styleUrls: ['./handicapped.page.scss'],
 })
-export class HandicappedPage implements OnInit {
+export class HandicappedPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
