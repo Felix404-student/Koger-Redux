@@ -1,15 +1,20 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/Gotham.otf');
+}
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #5260ff;
-  --ion-color-primary-rgb: 82, 96, 255;
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #4854e0;
-  --ion-color-primary-tint: #6370ff;
+  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -68,27 +73,77 @@
   --ion-color-medium-tint: #9d9fa6;
 
   /** light **/
-  --ion-color-light: #f4f5f8;
+  --ion-color-light: #ffffff;
   --ion-color-light-rgb: 244, 245, 248;
   --ion-color-light-contrast: #000000;
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
-}
 
-@media (prefers-color-scheme: dark) {
+    /** garnet **/
+    --ion-color-garnet: #73000a;
+    --ion-color-garnet-rgb: 115,0,10;
+    --ion-color-garnet-contrast: #ffffff;
+    --ion-color-garnet-contrast-rgb: 255,255,255;
+    --ion-color-garnet-shade: #650009;
+    --ion-color-garnet-tint: #811a23;
+
+    /** kogerblue **/
+    --ion-color-kogerblue: #25408f;
+    --ion-color-kogerblue-rgb: 37,64,143;
+    --ion-color-kogerblue-contrast: #ffffff;
+    --ion-color-kogerblue-contrast-rgb: 255,255,255;
+    --ion-color-kogerblue-shade: #21387e;
+    --ion-color-kogerblue-tint: #3b539a;
+
+    --ion-color-kogerbluelight: #EFF2FB;
+    --ion-color-kogerbluelight-rgb: 195,201,255;
+    --ion-color-kogerbluelight-contrast: #000000;
+    --ion-color-kogerbluelight-contrast-rgb: 0,0,0;
+    --ion-color-kogerbluelight-shade: #acb1e0;
+    --ion-color-kogerbluelight-tint: #c9ceff;
+  }
+
+  .ion-color-garnet {
+    --ion-color-base: var(--ion-color-garnet);
+    --ion-color-base-rgb: var(--ion-color-garnet-rgb);
+    --ion-color-contrast: var(--ion-color-garnet-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-garnet-contrast-rgb);
+    --ion-color-shade: var(--ion-color-garnet-shade);
+    --ion-color-tint: var(--ion-color-garnet-tint);
+  }
+
+  .ion-color-kogerblue {
+    --ion-color-base: var(--ion-color-kogerblue);
+    --ion-color-base-rgb: var(--ion-color-kogerblue-rgb);
+    --ion-color-contrast: var(--ion-color-kogerblue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-kogerblue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-kogerblue-shade);
+    --ion-color-tint: var(--ion-color-kogerblue-tint);
+  }
+
+  .ion-color-kogerbluelight {
+    --ion-color-base: var(--ion-color-kogerbluelight);
+    --ion-color-base-rgb: var(--ion-color-kogerbluelight-rgb);
+    --ion-color-contrast: var(--ion-color-kogerbluelight-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-kogerbluelight-contrast-rgb);
+    --ion-color-shade: var(--ion-color-kogerbluelight-shade);
+    --ion-color-tint: var(--ion-color-kogerbluelight-tint);
+  }
+
+@media (prefers-color-scheme: primary) {
   /*
    * Dark Colors
    * -------------------------------------------
    */
 
   body {
-    --ion-color-primary: #6a64ff;
-    --ion-color-primary-rgb: 106, 100, 255;
+    --ion-color-primary: #428cff;
+    --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
-    --ion-color-primary-contrast-rgb: 255, 255, 255;
-    --ion-color-primary-shade: #5d58e0;
-    --ion-color-primary-tint: #7974ff;
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #3a7be0;
+    --ion-color-primary-tint: #5598ff;
 
     --ion-color-secondary: #50c8ff;
     --ion-color-secondary-rgb: 80,200,255;
@@ -179,15 +234,11 @@
     --ion-color-step-900: #e6e6e6;
     --ion-color-step-950: #f2f2f2;
 
+    --ion-toolbar-background: #0d0d0d;
+
     --ion-item-background: #000000;
 
     --ion-card-background: #1c1c1d;
-  }
-
-  .ios ion-modal {
-    --ion-background-color: var(--ion-color-step-100);
-    --ion-toolbar-background: var(--ion-color-step-150);
-    --ion-toolbar-border-color: var(--ion-color-step-250);
   }
 
 
