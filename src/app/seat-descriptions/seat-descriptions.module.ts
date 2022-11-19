@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SeatDescrriptionsPageRoutingModule } from './seat-descrriptions-routing.module';
+import { SeatDescrriptionsPageRoutingModule } from './seat-descriptions-routing.module';
 
-import { SeatDescrriptionsPage } from './seat-descrriptions.page';
+import { SeatDescriptionsPage } from './seat-descriptions.page';
 
 @NgModule({
   imports: [
@@ -15,6 +15,6 @@ import { SeatDescrriptionsPage } from './seat-descrriptions.page';
     IonicModule,
     SeatDescrriptionsPageRoutingModule
   ],
-  declarations: [SeatDescrriptionsPage]
+  declarations: [SeatDescriptionsPage]
 })
 export class SeatDescrriptionsPageModule {}

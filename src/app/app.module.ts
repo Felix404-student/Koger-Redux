@@ -17,7 +17,7 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 import { SplashScreen } from '@capacitor/splash-screen';
-import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
+import { BarcodeScanner, BarcodeScannerOptions } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { PhotoViewer } from '@awesome-cordova-plugins/photo-viewer/ngx';
 import { EmailComposer } from '@awesome-cordova-plugins/email-composer/ngx';
